@@ -1,0 +1,35 @@
+@include xs{
+
+  body{
+    background-color: red;
+
+  }
+}
+@include sm{
+
+  body{
+    background-color: green;
+
+  }
+}
+@include md{
+
+  body{
+    background-color: yellow;
+
+  }
+}
+@include lg{
+
+  body{
+    background-color: blue;
+
+  }
+}
+
+@include xl{
+  body{
+    background-color: white;
+
+  }
+}

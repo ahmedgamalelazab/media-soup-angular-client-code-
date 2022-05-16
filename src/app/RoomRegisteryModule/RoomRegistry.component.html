@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header">
+    <h4>Room Join Form</h4>
+  </div>
+
+  <div class="card-body">
+    <form class="container" [formGroup]="roomFormGroup" (ngSubmit)="joinRoomSubmitButton()">
+      <div class="mb-3">
+        <label for="room-user-name" class="form-label">Room Name : </label>
+        <input
+          type="text"
+          id="room-user-name"
+          class="form-control"
+          placeholder="your name"
+          aria-describedby="helpId"
+          formControlName="userName"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          class="btn btn-primary"
+          type="submit"
+          class="form-control"
+          value="Join"
+          aria-describedby="helpId"
+        />
+      </div>
+    </form>
+  </div>
+</div>

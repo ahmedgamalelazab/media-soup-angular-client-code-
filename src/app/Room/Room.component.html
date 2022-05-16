@@ -1,0 +1,46 @@
+<div class="container p-4">
+  <div class="row w-100  p-2">
+    <div class="col-6">
+      <video autoplay controls class="video-component" id="localvideo">
+
+      </video>
+    </div>
+    <div class="col-6">
+      <video autoplay controls class="video-component" id="remoteVideo"></video>
+    </div>
+
+    <div class="col-6 py-2">
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="getLocalStream()">
+        1. get local video
+      </button>
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="getLocalAudio()">
+        1. get local audio
+      </button>
+    </div>
+
+    <div class="col-12 d-flex align-items-center justify-content-evenly">
+      <button class="btn btn-primary my-3 get-local-video" (click)="getRtpCapabilities()">
+        2. get rtpCapabilities
+      </button>
+      <button class="btn btn-primary  get-local-video" (click)="createDevice()">1. create Device</button>
+    </div>
+
+    <div class="col-6 py-2">
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="createSendTransport()">
+        1. create Send Transport
+      </button>
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="connectSendTransport()">
+        1. connect Send Transport and produce
+      </button>
+    </div>
+
+    <div class="col-6 py-2">
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="createRecvTransport()">
+        6. create recv transport
+      </button>
+      <button class="btn btn-primary mx-2 my-3 get-local-video" (click)="connectRcvTransport()">
+        7. Connect Recv Transport & consume
+      </button>
+    </div>
+  </div>
+</div>
